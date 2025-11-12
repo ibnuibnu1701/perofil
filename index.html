@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Foto Profil — Ibnu Ramadahan</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <div class="left">
+        <div class="avatar-wrap" id="avatarWrap" aria-hidden="true">
+          <img id="avatarImg" alt="Avatar preview">
+        </div>
+
+        <div class="meta">
+          <h1 id="displayName">Ibnu Ramadahan</h1>
+          <p id="displayRole">Mahasiswa</p>
+        </div>
+
+        <div class="controls">
+          <button id="downloadPng" class="btn primary">Unduh PNG</button>
+          <button id="downloadSvg" class="btn">Unduh SVG</button>
+          <button id="randomize" class="btn">Acak Warna</button>
+        </div>
+      </div>
+
+      <aside class="right">
+        <label class="field">
+          <span>Nama</span>
+          <input id="nameInput" type="text" value="Ibnu Ramadahan" />
+        </label>
+
+        <label class="field">
+          <span>Peran / Keterangan</span>
+          <input id="roleInput" type="text" value="Mahasiswa" />
+        </label>
+
+        <label class="field">
+          <span>Warna Gradient 1</span>
+          <input id="color1" type="color" value="#7c5cff" />
+        </label>
+
+        <label class="field">
+          <span>Warna Gradient 2</span>
+          <input id="color2" type="color" value="#00d2ff" />
+        </label>
+
+        <label class="field small">
+          <input id="transparentBg" type="checkbox" />
+          <span>Background transparan saat ekspor</span>
+        </label>
+
+        <label class="field">
+          <span>Ukuran preview (px)</span>
+          <input id="previewSize" type="range" min="80" max="320" value="160" />
+        </label>
+
+        <small class="hint">Klik "Unduh PNG" untuk menyimpan avatar sebagai file PNG (resolusi 1024×1024). SVG akan menyimpan vektor penuh.</small>
+      </aside>
+    </section>
+
+    <footer class="footer">
+      <small>Dibuat dengan HTML · CSS · JS — oleh Ibnu Ramadahan</small>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
